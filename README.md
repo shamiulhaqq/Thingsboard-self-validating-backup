@@ -91,9 +91,9 @@ sudo -u postgres pg_restore --clean --if-exists --no-owner --no-privileges -d tb
 
 Troubleshooting
 
-Symptom                                                              Fix
-permission denied writing dump                      sudo chmod 2770 /var/backups/thingsboard
-Backup skipped                                      Another run active → sudo rm -f /var/lock/tb-backup.lock
-pg_restore error                                    Test dump → pg_restore -l <dump>
-No alert emails                                     Ensure mailutils installed + outbound mail allowed
+|Symptom | Fix |
+permission denied writing dump | sudo chmod 2770 /var/backups/thingsboard|
+Backup skipped | Another run active → sudo rm -f /var/lock/tb-backup.lock|
+pg_restore error | Test dump → pg_restore -l <dump>|
+No alert emails | Ensure mailutils installed + outbound mail allowed|
 
