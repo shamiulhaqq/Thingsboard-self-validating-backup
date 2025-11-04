@@ -1,0 +1,4 @@
+/var/backups/
+*.log
+*.dump
+*.tar.gz
